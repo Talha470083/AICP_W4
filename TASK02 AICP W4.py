@@ -16,7 +16,7 @@ class AuctionItem:
             print(f"Bid recorded successfully for Item {self.item_number} by Buyer {buyer_number}. New highest bid: ${self.highest_bid}")
         else:
             print(f"Bid rejected for Item {self.item_number}. Please enter a higher bid.")
-
+def main():
 # Creating a list to store auction items
 auction_items = []
 
@@ -39,3 +39,5 @@ for item in auction_items:
     bid_amount = int(input(f"Enter your bid for Item {item.item_number}: $"))
     item.record_bid(buyer_number, bid_amount)
 
+if __name__ == "__main__":
+    main()
