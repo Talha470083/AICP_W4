@@ -4,7 +4,7 @@ class AuctionItem:
         self.description = description
         self.reserve_price = reserve_price
         self.num_bids = 0
-
+def main():
 # Creating a list to store auction items
 auction_items = []
 
@@ -23,4 +23,5 @@ auction_items.append(AuctionItem(10, "Electronics Bundle", 1500))
 # Displaying information for each item
 for item in auction_items:
     print(f"Item {item.item_number}: {item.description} - Reserve Price: ${item.reserve_price} - Number of Bids: {item.num_bids}")
-
+if __name__ == "__main__":
+    main()
