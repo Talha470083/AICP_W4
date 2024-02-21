@@ -21,7 +21,7 @@ class AuctionItem:
     def mark_as_sold(self):
         self.sold = True
 
-
+def main():
 # Creating a list to store auction items
 auction_items = []
 
@@ -73,4 +73,6 @@ print(f"Total Auction Fee for Sold Items: ${total_fee}")
 print(f"Number of Items Sold: {items_sold}")
 print(f"Number of Items Not Meeting Reserve Price: {items_not_met_reserve}")
 print(f"Number of Items with No Bids: {items_no_bids}")
+if __name__ == "__main__":
+    main()
 
